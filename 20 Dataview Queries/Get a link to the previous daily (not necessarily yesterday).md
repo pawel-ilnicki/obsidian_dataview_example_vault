@@ -22,7 +22,9 @@ LIMIT 1
 
 ### As javascript inline statement
 
-`$= dv.pages('"10 Example Data/dailys"').where(p => p.file.day && p.file.day < dv.current().file.day).sort(p => p.file.day, "desc").file.link.limit(1)`
+```
+$= dv.pages('"10 Example Data/dailys"').where(p => p.file.day && p.file.day < dv.current().file.day).sort(p => p.file.day, "desc").file.link.limit(1)
+```
 
 ### Show a custom prefix before the link
 
